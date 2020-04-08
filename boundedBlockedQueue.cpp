@@ -1,3 +1,6 @@
+//Size of the queue is intialized using constructor call. Synchronization is done using condition variables.
+//Push function waits for the condition variable from pop when the size of the queue is full.
+//Pop function waits for the condition variable from push function when queue is empty.
 class BoundedBlockingQueue {
 public:
     queue<int> bq;
